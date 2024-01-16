@@ -1,6 +1,7 @@
 import React from "react";
 import Perspective3d from "../perspective_3d/Perspective3d";
 import { englebert } from "../fonts";
+import Nail4 from "../nails/Nail";
 
 const brands = ["PwC", "Victoria's Secret", "Aon", "CVS"];
 
@@ -10,10 +11,7 @@ const WorkedWith = () => {
       translatez={100}
       className={`top-16 absolute text-xl text-center text-white left-[calc(50rem)] w-40 p-4 h-[32rem] bg-[#A7916D] grid place-content-center rounded-md transition-all ${englebert.className}`}
     >
-      <div className="w-3 h-3 top-1 left-1 rounded-full bg-black absolute"></div>
-      <div className="w-3 h-3 top-1 right-1 rounded-full bg-black absolute "></div>
-      <div className="w-3 h-3 bottom-1 left-1 rounded-full bg-black absolute"></div>
-      <div className="w-3 h-3 bottom-1 right-1 rounded-full bg-black absolute "></div>
+      <Nail4 />
       <Perspective3d translatez={50}>Worked with amazing brands</Perspective3d>
       {brands.map((item, i) => {
         return (
