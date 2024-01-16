@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Ephesis } from "next/font/google";
-
-const ephesis = Ephesis({
-  weight: ["400"],
-  subsets: ["latin"],
-});
+import { ephesis } from "@/components/fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
