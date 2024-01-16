@@ -11,7 +11,7 @@ const WebDeveloper = () => {
         <Perspective3d className="-ml-28 mt-10 w-auto">
           Web Developer
         </Perspective3d>
-        <Perspective3d className="ml-12 mt-16 w-52 text-sm">
+        <Perspective3d translatez={30} className="ml-12 mt-16 w-52 text-sm">
           The combination of my passion for design, code & interaction,
           positions me in a unique place in the web design world.
         </Perspective3d>
