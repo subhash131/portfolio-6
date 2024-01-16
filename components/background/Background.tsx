@@ -21,12 +21,12 @@ const Background = ({
   const rotateX = useTransform(
     mouseYSpring,
     [-0.5, 0.5],
-    ["17.5deg", "-17.5deg"]
+    ["12.5deg", "-12.5deg"]
   );
   const rotateY = useTransform(
     mouseXSpring,
     [-0.5, 0.5],
-    ["-17.5deg", "17.5deg"]
+    ["-12.5deg", "12.5deg"]
   );
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
