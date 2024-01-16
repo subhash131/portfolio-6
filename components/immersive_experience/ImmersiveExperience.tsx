@@ -9,7 +9,7 @@ const ImmersiveExperience = () => {
     >
       <div className="w-3 h-3 top-1 left-1 rounded-full bg-black absolute"></div>
       <div className="w-3 h-3 top-1 right-1 rounded-full bg-black absolute "></div>
-      <Perspective3d translatez={40}>
+      <Perspective3d translatez={50}>
         For any digital product, a seemless and enhanced user experience(UX) is
         crucial, accompained by an emotionally engaging and immersive user
         interface(UI)
