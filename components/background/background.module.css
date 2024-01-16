@@ -1,7 +1,6 @@
 .container {
-  background-image: url("../../public/next.svg");
   width: 80vw;
   height: 90vh;
   position: relative;
-  background-color: #171e12;
+  background-color: black;
 }
