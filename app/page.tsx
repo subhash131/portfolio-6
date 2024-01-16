@@ -5,6 +5,7 @@ import WebDeveloper from "@/components/web_developer/WebDeveloper";
 import DigitalProduct from "@/components/digital_product/DigitalProduct";
 import ImmersiveExperience from "@/components/immersive_experience/ImmersiveExperience";
 import WorkedWith from "@/components/worked_with/WorkedWith";
+import Menu from "@/components/menu/Menu";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <DigitalProduct />
         <ImmersiveExperience />
         <WorkedWith />
+        <Menu />
       </Background>
     </Perspective3d>
   );
