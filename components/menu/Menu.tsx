@@ -19,7 +19,7 @@ const Menu = () => {
         return (
           <Perspective3d
             key={`${item}-${i}`}
-            className="w-28 h-28 rounded-2xl bg-[#1F1F1E] grid place-content-center shadow-2xl cursor-pointer"
+            className="w-28 h-28 rounded-2xl bg-[#1F1F1E] grid place-content-center shadow-2xl cursor-pointer hover:bg-[#4c4c4a] transition-all"
           >
             {item}
           </Perspective3d>
