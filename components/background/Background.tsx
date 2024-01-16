@@ -69,10 +69,11 @@ const Background = ({
         className={`absolute inset-4 rounded-md shadow-lg ${className}`}
       >
         {children}
-        <Perspective3d className="top-32 left-12 absolute">
-          <p className="text-white text-4xl select-none">
-            Built by Subhash Nayak
-          </p>
+        <Perspective3d
+          translatez={23}
+          className="top-28 left-12 absolute text-white text-4xl select-none"
+        >
+          Built by Subhash Nayak
         </Perspective3d>
       </div>
     </motion.div>
