@@ -1,6 +1,6 @@
 import Perspective3d from "@/components/perspective_3d/Perspective3d";
 import Background from "@/components/background/Background";
-import TitleBar from "@/components/titlebar/TitleBar";
+import TitleBar from "@/components/titlebar/Titlebar";
 import WebDeveloper from "@/components/web_developer/WebDeveloper";
 import DigitalProduct from "@/components/digital_product/DigitalProduct";
 import ImmersiveExperience from "@/components/immersive_experience/ImmersiveExperience";
