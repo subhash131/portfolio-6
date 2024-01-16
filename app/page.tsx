@@ -4,6 +4,7 @@ import TitleBar from "@/components/titlebar/Titlebar";
 import WebDeveloper from "@/components/web_developer/WebDeveloper";
 import DigitalProduct from "@/components/digital_product/DigitalProduct";
 import ImmersiveExperience from "@/components/immersive_experience/ImmersiveExperience";
+import WorkedWith from "@/components/worked_with/WorkedWith";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <WebDeveloper />
         <DigitalProduct />
         <ImmersiveExperience />
+        <WorkedWith />
       </Background>
     </Perspective3d>
   );
