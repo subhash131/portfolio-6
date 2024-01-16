@@ -66,7 +66,7 @@ const Background = ({
           transform: "translateZ(75px)",
           transformStyle: "preserve-3d",
         }}
-        className={`absolute inset-4 rounded-md bg-white shadow-lg ${className}`}
+        className={`absolute inset-4 rounded-md shadow-lg ${className}`}
       >
         {children}
         <Perspective3d className="top-32 left-12 absolute">
