@@ -17,7 +17,7 @@ const WebDeveloper = () => {
         bottom: 20,
       }}
       transition={{ duration: 0.4, delay: 0.2 }}
-      className={`bottom-[5%] absolute text-3xl text-center text-white left-[5%] h-[55%] w-[30%]  bg-[#7B896B] grid place-content-center rounded-md ${englebert.className} transition-all`}
+      className={`bottom-[5%] absolute text-3xl text-center text-white left-[4%] h-[55%] w-[30%]  bg-[#7B896B] grid place-content-center rounded-md ${englebert.className} transition-all`}
     >
       <MotionPerspective3d
         initial={{
