@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Perspective3d from "../perspective_3d/Perspective3d";
-import { englebert } from "../fonts";
+import { englebert } from "../../fonts";
 import { Nail2 } from "../nails/Nail";
 import MotionPerspective3d from "../perspective_3d/MotionPerspective3d";
 

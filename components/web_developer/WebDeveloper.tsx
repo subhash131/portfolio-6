@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Perspective3d from "../perspective_3d/Perspective3d";
-import { englebert } from "../fonts";
+import { englebert } from "../../fonts";
 import MotionPerspective3d from "../perspective_3d/MotionPerspective3d";
 
 const WebDeveloper = () => {
