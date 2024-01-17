@@ -9,7 +9,7 @@ const WorkedWith = () => {
   return (
     <Perspective3d
       translatez={100}
-      className={`top-[12%] absolute text-xl text-center text-white left-[67%] w-[13%] h-[85%] p-4 bg-[#A7916D] flex items-center flex-col justify-center rounded-md transition-all ${englebert.className}`}
+      className={`top-[12%] absolute text-xl text-center text-white left-[67%] w-[13%] h-[85%] p-4 bg-[#A7916D] flex items-center flex-col justify-center rounded-md transition-all pointer-events-none ${englebert.className}`}
     >
       <Nail4 />
       <Perspective3d translatez={50} className="text-black">
