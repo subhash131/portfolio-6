@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Perspective3d from "../perspective_3d/Perspective3d";
 import { englebert } from "../fonts";
