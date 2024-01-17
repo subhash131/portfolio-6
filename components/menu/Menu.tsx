@@ -13,7 +13,7 @@ const Menu = () => {
       className={`top-[12%] absolute text-xl text-center text-white left-[83%] w-[13%] h-[85%] p-4 bg-[#a2652f] grid place-content-center gap-4 rounded-md transition-all ${englebert.className}`}
     >
       <Nail4 />
-      <Perspective3d translatez={50} className="text-black">
+      <Perspective3d translatez={50} className="text-black pointer-events-none">
         Menu
       </Perspective3d>
       {brands.map((item, i) => {
