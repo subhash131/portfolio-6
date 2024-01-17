@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ephesis } from "@/fonts";
+import StateContextProvider from "@/context/StateContext";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,7 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={ephesis.className}>{children}</body>
+      <StateContextProvider>
+        <body className={ephesis.className}>{children}</body>
+      </StateContextProvider>
     </html>
   );
 }

@@ -1,10 +1,16 @@
-import React from "react";
-import { createContext } from "vm";
+"use client";
+import React, { createContext, useContext } from "react";
 
-export const Context = createContext(undefined);
+export const StateContext = createContext<null | { a: string }>(null);
 
-const StateContext = ({ children }: { children: React.ReactNode }) => {
-  return <Context>{children}</Context>;
+const StateContextProvider = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <StateContext.Provider value={{ a: "aaa" }}>
+      {children}
+    </StateContext.Provider>
+  );
 };
 
-export default StateContext;
+export default StateContextProvider;
+
+export const useStateContext = () => useContext(StateContext);
