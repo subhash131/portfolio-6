@@ -4,7 +4,6 @@ import Perspective3d from "../perspective_3d/Perspective3d";
 import { englebert } from "../fonts";
 import Nail4 from "../nails/Nail";
 import MotionPerspective3d from "../perspective_3d/MotionPerspective3d";
-import { delay } from "framer-motion";
 
 const brands = ["Home", "Projects", "Contact"];
 
