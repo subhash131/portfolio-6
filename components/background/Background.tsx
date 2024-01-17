@@ -3,6 +3,7 @@ import React from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 
 import styles from "./background.module.css";
+import Perspective3d from "../perspective_3d/Perspective3d";
 
 const Background = ({
   children,
@@ -63,9 +64,9 @@ const Background = ({
         className={`absolute inset-4 rounded-md shadow-lg ${className}`}
       >
         {children}
-        <p className="top-28 left-12 absolute text-white text-4xl select-none">
+        <Perspective3d className="top-28 left-12 absolute text-white text-4xl select-none">
           Code by Subhash Nayak
-        </p>
+        </Perspective3d>
       </div>
     </motion.div>
   );
