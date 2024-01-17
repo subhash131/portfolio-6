@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Perspective3d from "../perspective_3d/Perspective3d";
 import { englebert } from "../fonts";
@@ -19,9 +20,9 @@ const WorkedWith = () => {
         return (
           <Perspective3d
             key={`${item}-${i}`}
-            className="w-[85%] h-[100%] rounded-full bg-black grid place-content-center shadow-2xl"
+            className="w-[85%] h-[100%] rounded-full bg-black flex items-center justify-center shadow-2xl pointer-events-none"
           >
-            {item}
+            <Perspective3d>{item}</Perspective3d>
           </Perspective3d>
         );
       })}

@@ -4,10 +4,12 @@ const Perspective3d = ({
   children,
   className,
   translatez = 75,
+  onClick,
 }: {
   children?: React.ReactNode;
   className?: string;
   translatez?: number;
+  onClick?: () => void;
 }) => {
   return (
     <div
@@ -16,6 +18,7 @@ const Perspective3d = ({
         transformStyle: "preserve-3d",
       }}
       className={className}
+      onClick={onClick}
     >
       {children}
     </div>
