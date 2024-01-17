@@ -3,7 +3,6 @@ import React from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 
 import styles from "./background.module.css";
-import Perspective3d from "../perspective_3d/Perspective3d";
 
 const Background = ({
   children,
@@ -52,6 +51,9 @@ const Background = ({
         transformStyle: "preserve-3d",
       }}
       className={styles.container}
+      initial={{ height: 0, width: 0, overflow: "hidden" }}
+      animate={{ height: 650, width: 1250, overflow: "visible" }}
+      transition={{ duration: 0.5 }}
     >
       <div
         style={{
@@ -62,7 +64,7 @@ const Background = ({
       >
         {children}
         <p className="top-28 left-12 absolute text-white text-4xl select-none">
-          Built by Subhash Nayak
+          Code by Subhash Nayak
         </p>
       </div>
     </motion.div>

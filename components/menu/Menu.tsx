@@ -3,12 +3,15 @@ import React from "react";
 import Perspective3d from "../perspective_3d/Perspective3d";
 import { englebert } from "../fonts";
 import Nail4 from "../nails/Nail";
+import MotionPerspective3d from "../perspective_3d/MotionPerspective3d";
 
 const brands = ["Home", "Projects", "Contact"];
 
 const Menu = () => {
   return (
-    <Perspective3d
+    <MotionPerspective3d
+      initial={{ height: 0, overflow: "hidden", fontSize: "0rem" }}
+      animate={{ height: "85%", overflow: "visible", fontSize: "1.5rem" }}
       translatez={100}
       className={`top-[12%] absolute text-xl text-center text-white left-[83%] w-[13%] h-[85%] p-4 bg-[#a2652f] grid place-content-center gap-4 rounded-md transition-all pointer-events-none ${englebert.className}`}
     >
@@ -29,7 +32,7 @@ const Menu = () => {
           </Perspective3d>
         );
       })}
-    </Perspective3d>
+    </MotionPerspective3d>
   );
 };
 
