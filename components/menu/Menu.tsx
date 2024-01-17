@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Perspective3d from "../perspective_3d/Perspective3d";
 import { englebert } from "../fonts";
@@ -20,8 +21,13 @@ const Menu = () => {
           <Perspective3d
             key={`${item}-${i}`}
             className="w-28 h-28 rounded-md bg-[#000] grid place-content-center shadow-2xl cursor-pointer hover:bg-[#4c4c4a] transition-all"
+            onClick={() => {
+              console.log("hi");
+            }}
           >
-            {item}
+            <Perspective3d className="pointer-events-none">
+              {item}
+            </Perspective3d>
           </Perspective3d>
         );
       })}
