@@ -5,7 +5,7 @@ import { englebert } from "../fonts";
 const WebDeveloper = () => {
   return (
     <Perspective3d
-      className={`bottom-10 absolute text-3xl text-center text-white left-10 w-96 h-80 bg-[#7B896B] grid place-content-center rounded-md ${englebert.className} transition-all`}
+      className={`bottom-[5%] absolute text-3xl text-center text-white left-[5%] w-[30%] h-[55%] bg-[#7B896B] grid place-content-center rounded-md ${englebert.className} transition-all`}
     >
       <Perspective3d className="w-52 h-52 rounded-full bg-black">
         <Perspective3d className="-ml-28  w-auto">Web Developer</Perspective3d>

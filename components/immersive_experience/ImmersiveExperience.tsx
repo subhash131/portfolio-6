@@ -6,7 +6,7 @@ import { Nail2 } from "../nails/Nail";
 const ImmersiveExperience = () => {
   return (
     <Perspective3d
-      className={`top-20 absolute text-xl text-center text-black left-[calc(24rem+4rem)] w-80 p-4 h-52 bg-[#C4BDA5] grid place-content-center rounded-md transition-all ${englebert.className}`}
+      className={`top-[12%] absolute text-xl text-center text-black left-[37%] p-4 w-[27%] h-[35%] bg-[#C4BDA5] grid place-content-center rounded-md transition-all ${englebert.className}`}
     >
       <Nail2 />
       <Perspective3d translatez={50}>

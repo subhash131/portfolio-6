@@ -9,15 +9,17 @@ const WorkedWith = () => {
   return (
     <Perspective3d
       translatez={100}
-      className={`top-16 absolute text-xl text-center text-white left-[calc(50rem)] w-40 p-4 h-[32rem] bg-[#A7916D] grid place-content-center rounded-md transition-all ${englebert.className}`}
+      className={`top-[12%] absolute text-xl text-center text-white left-[67%] w-[13%] h-[85%] p-4 bg-[#A7916D] flex items-center flex-col justify-center rounded-md transition-all ${englebert.className}`}
     >
       <Nail4 />
-      <Perspective3d translatez={50}>Worked with amazing brands</Perspective3d>
+      <Perspective3d translatez={50} className="text-black">
+        Worked with amazing brands
+      </Perspective3d>
       {brands.map((item, i) => {
         return (
           <Perspective3d
             key={`${item}-${i}`}
-            className="w-28 h-28 rounded-full bg-black grid place-content-center shadow-2xl"
+            className="w-[85%] h-[100%] rounded-full bg-black grid place-content-center shadow-2xl"
           >
             {item}
           </Perspective3d>

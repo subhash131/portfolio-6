@@ -9,10 +9,12 @@ const Menu = () => {
   return (
     <Perspective3d
       translatez={100}
-      className={`top-16 absolute text-xl text-center text-white left-[62rem] w-40 p-4 h-[32rem] bg-[#A25A2F] grid place-content-center gap-4 rounded-md transition-all ${englebert.className}`}
+      className={`top-[12%] absolute text-xl text-center text-white left-[83%] w-[13%] h-[85%] p-4 bg-[#a2652f] grid place-content-center gap-4 rounded-md transition-all ${englebert.className}`}
     >
       <Nail4 />
-      <Perspective3d translatez={50}>Menu</Perspective3d>
+      <Perspective3d translatez={50} className="text-black">
+        Menu
+      </Perspective3d>
       {brands.map((item, i) => {
         return (
           <Perspective3d

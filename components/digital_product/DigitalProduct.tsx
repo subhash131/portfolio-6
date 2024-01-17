@@ -6,7 +6,7 @@ import { Nail2 } from "../nails/Nail";
 const DigitalProduct = () => {
   return (
     <Perspective3d
-      className={`bottom-10 absolute text-2xl text-center text-white left-[calc(24rem+4rem)] w-80 p-4 h-60 bg-[#0008D3] grid place-content-center rounded-md transition-all ${englebert.className}`}
+      className={`bottom-[5%] absolute text-2xl text-center text-white left-[37%] p-4 w-[27%]  h-[43%] bg-[#0008D3] grid place-content-center rounded-md transition-all ${englebert.className}`}
     >
       <Nail2 />
       <Perspective3d>
