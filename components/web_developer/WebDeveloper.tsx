@@ -35,8 +35,10 @@ const WebDeveloper = () => {
         transition={{ duration: 0.4, delay: 0.9 }}
         className="rounded-full bg-black"
       >
-        <Perspective3d className="-ml-28  w-auto">Web Developer</Perspective3d>
-        <Perspective3d translatez={30} className="ml-12 mt-28 w-52 text-sm">
+        <Perspective3d className="mt-2 -ml-10  w-auto">
+          Web Developer
+        </Perspective3d>
+        <Perspective3d translatez={30} className="ml-12 mt-20 w-52 text-sm">
           The combination of my passion for design, code & interaction,
           positions me in a unique place in the web design world.
         </Perspective3d>
