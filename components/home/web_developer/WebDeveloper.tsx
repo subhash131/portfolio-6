@@ -9,13 +9,13 @@ const WebDeveloper = () => {
     <MotionPerspective3d
       initial={{ height: 0, visibility: "hidden", fontSize: "0rem", bottom: 0 }}
       animate={{
-        height: "55%",
+        height: "65%",
         visibility: "visible",
         fontSize: "1.875rem",
         bottom: 20,
       }}
       transition={{ duration: 0.4, delay: 0.2 }}
-      className={`bottom-[5%] absolute text-3xl text-center text-white left-[4%] h-[55%] w-[30%]  bg-[#7B896B] grid place-content-center rounded-md ${englebert.className} transition-all`}
+      className={`bottom-[5%] absolute text-3xl text-center text-white left-[4%] h-[55%] w-[30%]  bg-[#42606E] grid place-content-center rounded-md ${englebert.className} transition-all`}
     >
       <MotionPerspective3d
         initial={{
