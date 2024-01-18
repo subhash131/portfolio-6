@@ -22,7 +22,7 @@ export default function RootLayout({
       <StateContextProvider>
         <body className={`${ephesis.className}`}>
           <Perspective3d className="h-screen w-screen overflow-hidden bg-black grid place-content-center select-none">
-            <Background className="bg-[#181E12] p-2 ">
+            <Background>
               <Titlebar />
               {children}
               <Menu />
