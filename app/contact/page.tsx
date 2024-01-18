@@ -1,6 +1,6 @@
 "use client";
 import Perspective3d from "@/components/common/perserve_3d/Perspective3d";
-import DropMessage from "@/components/contact/DropMessage";
+import DropMessage from "@/components/contact/Message";
 import Email from "@/components/contact/Email";
 import SendMessage from "@/components/contact/Send";
 import React from "react";
