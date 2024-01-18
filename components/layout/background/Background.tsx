@@ -1,9 +1,10 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 
 import styles from "./background.module.css";
 import Perspective3d from "../../common/perserve_3d/Perspective3d";
+import { useStateContext } from "@/context/StateContext";
 
 const Background = ({
   children,
@@ -12,6 +13,10 @@ const Background = ({
   children: React.ReactNode;
   className?: string;
 }) => {
+  const { bgColor } = useStateContext();
+  useEffect(() => {
+    document.documentElement.style.setProperty("--bgcolor", bgColor);
+  }, [bgColor]);
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
@@ -61,7 +66,7 @@ const Background = ({
           transform: "translateZ(75px)",
           transformStyle: "preserve-3d",
         }}
-        className={`absolute inset-4 rounded-md shadow-lg ${className}`}
+        className={`absolute inset-4 rounded-md shadow-lg ${className} p-2  ${styles.bg}`}
       >
         {children}
         <Perspective3d className="top-28 left-20 absolute text-white text-4xl select-none">
