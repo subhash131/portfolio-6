@@ -9,7 +9,7 @@ const WebDeveloper = () => {
 
   return (
     <MotionPerspective3d
-      initial={{ height: 0, overflow: "hidden", fontSize: "0rem", bottom: 500 }}
+      initial={{ height: 0, overflow: "hidden", fontSize: "0rem", bottom: 0 }}
       animate={{
         height: "55%",
         overflow: "visible",
