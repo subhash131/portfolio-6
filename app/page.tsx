@@ -1,16 +1,12 @@
-"use client";
-import Perspective3d from "@/components/perspective_3d/Perspective3d";
-import Background from "@/components/background/Background";
-import TitleBar from "@/components/titlebar/Titlebar";
-import WebDeveloper from "@/components/web_developer/WebDeveloper";
-import DigitalProduct from "@/components/digital_product/DigitalProduct";
-import ImmersiveExperience from "@/components/immersive_experience/ImmersiveExperience";
-import WorkedWith from "@/components/worked_with/WorkedWith";
-import Menu from "@/components/menu/Menu";
-import { useStateContext } from "@/context/StateContext";
+"use client"
+import WebDeveloper from "@/components/home/web_developer/WebDeveloper";
+import DigitalProduct from "@/components/home/digital_product/DigitalProduct";
+import ImmersiveExperience from "@/components/home/immersive_experience/ImmersiveExperience";
+import WorkedWith from "@/components/home/worked_with/WorkedWith";
+// import { useStateContext } from "@/context/StateContext";
 
 export default function Home() {
-  const s = useStateContext();
+  // const s = useStateContext();
   return (
     <>
       <WebDeveloper />
