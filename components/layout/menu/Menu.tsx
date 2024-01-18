@@ -5,6 +5,7 @@ import { englebert } from "../../../fonts";
 import Nail4 from "../../common/nails/Nail";
 import MotionPerspective3d from "../../common/perserve_3d/MotionPerspective3d";
 import Link from "next/link";
+import { useStateContext } from "@/context/StateContext";
 
 const brands = ["Home", "Projects", "Contact"];
 
@@ -22,7 +23,7 @@ const Menu = () => {
         Menu
       </Perspective3d>
       {brands.map((item, i) => {
-        return <Item index={i} item={item} key={`${item}-${i}`} />;
+        return <Item item={item} key={`${item}-${i}`} />;
       })}
     </MotionPerspective3d>
   );
@@ -30,12 +31,17 @@ const Menu = () => {
 
 export default Menu;
 
-const Item = ({ item, index }: { item: string; index: number }) => {
+const Item = ({ item }: { item: string }) => {
+  const { setCurrentPage } = useStateContext();
+
   return (
     <Link
       href={`/${item.toLowerCase()}`}
       style={{
         transformStyle: "preserve-3d",
+      }}
+      onClick={() => {
+        setCurrentPage(item.toLowerCase());
       }}
     >
       <MotionPerspective3d
@@ -49,9 +55,6 @@ const Item = ({ item, index }: { item: string; index: number }) => {
         }}
         transition={{ duration: 0.2, delay: 0.6 }}
         className="w-28 h-28 rounded-md bg-[#000] grid place-content-center shadow-2xl cursor-pointer hover:bg-[#4c4c4a] transition-all pointer-events-auto "
-        onClick={() => {
-          console.log("hi");
-        }}
       >
         <Perspective3d>{item}</Perspective3d>
       </MotionPerspective3d>
