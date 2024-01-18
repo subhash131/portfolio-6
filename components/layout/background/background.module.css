@@ -2,5 +2,10 @@
   width: 85vw;
   height: 92vh;
   position: relative;
-  background-color: black;
+}
+
+.bg {
+  background-color: var(--bgcolor);
+  transition-delay: 1s;
+  transition-duration: 1s;
 }
