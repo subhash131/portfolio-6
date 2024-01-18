@@ -22,7 +22,7 @@ const Menu = () => {
         Menu
       </Perspective3d>
       {brands.map((item, i) => {
-        return <Item index={i} item={item} />;
+        return <Item index={i} item={item} key={`${item}-${i}`} />;
       })}
     </MotionPerspective3d>
   );
@@ -43,7 +43,6 @@ const Item = ({ item, index }: { item: string; index: number }) => {
           fontSize: "1.5rem",
         }}
         transition={{ duration: 0.2, delay: 0.6 }}
-        key={`${item}-${index}`}
         className="w-28 h-28 rounded-md bg-[#000] grid place-content-center shadow-2xl cursor-pointer hover:bg-[#4c4c4a] transition-all pointer-events-auto "
         onClick={() => {
           console.log("hi");
