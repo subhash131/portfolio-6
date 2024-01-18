@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ephesis } from "@/fonts";
 import StateContextProvider from "@/context/StateContext";
+import Background from "@/components/background/Background";
+import Titlebar from "@/components/titlebar/Titlebar";
+import Menu from "@/components/menu/Menu";
+import Perspective3d from "@/components/perspective_3d/Perspective3d";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +20,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <StateContextProvider>
-        <body className={ephesis.className}>{children}</body>
+        <body className={`${ephesis.className}`}>
+          <Perspective3d className="h-screen w-screen overflow-hidden bg-black grid place-content-center select-none">
+            <Background className="bg-[#181E12] p-2">
+              <Titlebar />
+              {children}
+              <Menu />
+            </Background>
+          </Perspective3d>
+        </body>
       </StateContextProvider>
     </html>
   );
