@@ -13,16 +13,16 @@ const StateContextProvider = ({ children }: { children: React.ReactNode }) => {
   const getPageColor = () => {
     switch (currentPage) {
       case "home":
-        setBgColor("#111A0B");
+        setBgColor("#092A34");
         break;
       case "contact":
         setBgColor("#1C1023");
         break;
       case "projects":
-        setBgColor("#092A34");
+        setBgColor("#111A0B");
         break;
       default:
-        setBgColor("#111A0B");
+        setBgColor("#092A34");
     }
   };
   useEffect(() => {
