@@ -6,6 +6,6 @@
 
 .bg {
   background-color: var(--bgcolor);
-  transition-delay: 1s;
+  transition-delay: 0.5s;
   transition-duration: 1s;
 }
