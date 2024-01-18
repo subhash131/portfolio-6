@@ -4,6 +4,7 @@ import Perspective3d from "../perspective_3d/Perspective3d";
 import { englebert } from "../../fonts";
 import Nail4 from "../nails/Nail";
 import MotionPerspective3d from "../perspective_3d/MotionPerspective3d";
+import Link from "next/link";
 
 const brands = ["Home", "Projects", "Contact"];
 
@@ -21,29 +22,35 @@ const Menu = () => {
         Menu
       </Perspective3d>
       {brands.map((item, i) => {
-        return (
-          <MotionPerspective3d
-            initial={{
-              height: 0,
-              fontSize: "0rem",
-            }}
-            animate={{
-              height: "7rem",
-              fontSize: "1.5rem",
-            }}
-            transition={{ duration: 0.2, delay: 0.6 }}
-            key={`${item}-${i}`}
-            className="w-28 h-28 rounded-md bg-[#000] grid place-content-center shadow-2xl cursor-pointer hover:bg-[#4c4c4a] transition-all pointer-events-auto "
-            onClick={() => {
-              console.log("hi");
-            }}
-          >
-            <Perspective3d>{item}</Perspective3d>
-          </MotionPerspective3d>
-        );
+        return <Item index={i} item={item} />;
       })}
     </MotionPerspective3d>
   );
 };
 
 export default Menu;
+
+const Item = ({ item, index }: { item: string; index: number }) => {
+  return (
+    <Link href={`/${item.toLowerCase()}`}>
+      <MotionPerspective3d
+        initial={{
+          height: 0,
+          fontSize: "0rem",
+        }}
+        animate={{
+          height: "7rem",
+          fontSize: "1.5rem",
+        }}
+        transition={{ duration: 0.2, delay: 0.6 }}
+        key={`${item}-${index}`}
+        className="w-28 h-28 rounded-md bg-[#000] grid place-content-center shadow-2xl cursor-pointer hover:bg-[#4c4c4a] transition-all pointer-events-auto "
+        onClick={() => {
+          console.log("hi");
+        }}
+      >
+        <Perspective3d>{item}</Perspective3d>
+      </MotionPerspective3d>
+    </Link>
+  );
+};
