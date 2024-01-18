@@ -25,7 +25,7 @@ const Send = () => {
       }}
     >
       <Perspective3d className="pointer-events-none">
-        Send To Subhashnayak131 @gmail.com
+        Send To subhashnayak131 @gmail.com
       </Perspective3d>
     </MotionPerspective3d>
   );
