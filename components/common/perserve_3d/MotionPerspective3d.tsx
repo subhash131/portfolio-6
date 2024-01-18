@@ -22,7 +22,7 @@ const MotionPerspective3d = ({
     <motion.div
       animate={animate}
       initial={initial}
-      transition={transition}
+      transition={{ ...transition, ease: "linear" }}
       style={{
         transform: `translateZ(${translatez}px)`,
         transformStyle: "preserve-3d",
