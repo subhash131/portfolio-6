@@ -11,17 +11,12 @@ import { useStateContext } from "@/context/StateContext";
 
 export default function Home() {
   const s = useStateContext();
-  console.log("s: ", s);
   return (
-    <Perspective3d className="h-screen w-screen overflow-hidden bg-black grid place-content-center select-none">
-      <Background className="bg-[#181E12] p-2">
-        <TitleBar />
-        <WebDeveloper />
-        <DigitalProduct />
-        <ImmersiveExperience />
-        <WorkedWith />
-        <Menu />
-      </Background>
-    </Perspective3d>
+    <>
+      <WebDeveloper />
+      <DigitalProduct />
+      <ImmersiveExperience />
+      <WorkedWith />
+    </>
   );
 }
