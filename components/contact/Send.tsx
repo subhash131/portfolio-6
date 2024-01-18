@@ -24,7 +24,9 @@ const Send = () => {
         console.log("send");
       }}
     >
-      <Perspective3d className="pointer-events-none">Send</Perspective3d>
+      <Perspective3d className="pointer-events-none">
+        Send To Subhashnayak131 @gmail.com
+      </Perspective3d>
     </MotionPerspective3d>
   );
 };
