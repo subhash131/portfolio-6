@@ -32,7 +32,12 @@ export default Menu;
 
 const Item = ({ item, index }: { item: string; index: number }) => {
   return (
-    <Link href={`/${item.toLowerCase()}`}>
+    <Link
+      href={`/${item.toLowerCase()}`}
+      style={{
+        transformStyle: "preserve-3d",
+      }}
+    >
       <MotionPerspective3d
         initial={{
           height: 0,
