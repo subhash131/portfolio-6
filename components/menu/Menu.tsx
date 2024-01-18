@@ -25,19 +25,15 @@ const Menu = () => {
           <MotionPerspective3d
             initial={{
               height: 0,
-              width: 0,
-              overflow: "hidden",
               fontSize: "0rem",
             }}
             animate={{
               height: "7rem",
-              width: 110,
-              overflow: "visible",
               fontSize: "1.5rem",
             }}
-            transition={{ duration: 0.3, delay: 0.5 }}
+            transition={{ duration: 0.2, delay: 0.6 }}
             key={`${item}-${i}`}
-            className="w-28 h-28 rounded-md bg-[#000] grid place-content-center shadow-2xl cursor-pointer hover:bg-[#4c4c4a] transition-all pointer-events-auto"
+            className="w-28 h-28 rounded-md bg-[#000] grid place-content-center shadow-2xl cursor-pointer hover:bg-[#4c4c4a] transition-all pointer-events-auto "
             onClick={() => {
               console.log("hi");
             }}
