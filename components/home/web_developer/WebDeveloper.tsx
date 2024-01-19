@@ -51,7 +51,7 @@ const WebDeveloper = () => {
             top: "12%",
             visibility: "visible",
           }}
-          transition={{ duration: 1, delay: 2.6 }}
+          transition={{ duration: 1, delay: 2 }}
         >
           The combination of my passion for design, code & interaction,
           positions me in a unique place in the web development world.
