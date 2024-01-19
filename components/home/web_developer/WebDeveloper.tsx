@@ -30,7 +30,7 @@ const WebDeveloper = () => {
           overflow: "visible",
           fontSize: "1.875rem",
         }}
-        transition={{ duration: 0.4, delay: 0.9 }}
+        transition={{ duration: 0.4, delay: 0.7 }}
         className="rounded-full bg-black"
       >
         <Perspective3d className="mt-2 -ml-10  w-auto">
