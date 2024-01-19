@@ -35,7 +35,7 @@ const WorkedWith = () => {
             key={`${item}-${i}`}
             className="w-[85%] h-[100%] rounded-full bg-black flex items-center justify-center shadow-2xl pointer-events-none"
           >
-            <Perspective3d>{item}</Perspective3d>
+            <Perspective3d translatez={10}>{item}</Perspective3d>
           </Perspective3d>
         );
       })}
