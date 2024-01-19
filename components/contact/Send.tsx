@@ -18,7 +18,7 @@ const Send = () => {
       }}
       translatez={0}
       transition={{ duration: 0.3, delay: 1 }}
-      className={` absolute text-2xl text-center bg-[#fff] text-gray-700 left-[73%] p-4 w-[20%] rounded-md transition-all flex bottom-[10%] gap-10 flex-col justify-center cursor-pointer hover:bg-indigo-500 hover:text-white`}
+      className={` absolute text-2xl text-center bg-[#fff] text-gray-700 left-[73%] p-4 w-[20%] rounded-md transition-all flex bottom-[10%] gap-10 flex-col justify-center cursor-pointer duration-500 hover:bg-indigo-500 hover:text-white`}
       onClick={() => {
         console.log("send");
       }}
