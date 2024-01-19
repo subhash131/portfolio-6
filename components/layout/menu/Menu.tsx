@@ -6,7 +6,11 @@ import MotionPerspective3d from "../../common/perserve_3d/MotionPerspective3d";
 import Link from "next/link";
 import { useStateContext } from "@/context/StateContext";
 
-const brands = ["Home", "Projects", "Contact"];
+const brands = [
+  "Home",
+  // "Projects",
+  "Contact",
+];
 
 const Menu = () => {
   return (
