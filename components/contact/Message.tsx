@@ -23,7 +23,7 @@ const Message = () => {
         <textarea
           style={{
             transformStyle: "preserve-3d",
-            transform: "translateZ(35px)",
+            transform: "translateZ(15px)",
           }}
           placeholder="Type message..."
           className="pointer-events-auto border-b ring-0 bg-transparent outline-none w-full h-full resize-none drop-shadow-md"
