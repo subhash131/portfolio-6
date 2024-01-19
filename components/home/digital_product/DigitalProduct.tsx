@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { englebert } from "../../../fonts";
 import { Nail2 } from "../../common/nails/Nail";
 import MotionPerspective3d from "../../common/perserve_3d/MotionPerspective3d";
 
@@ -18,7 +17,7 @@ const DigitalProduct = () => {
         visibility: "visible",
       }}
       transition={{ duration: 0.3, delay: 1.7 }}
-      className={`bottom-[5%] absolute text-2xl text-center text-white left-[37%] p-4 w-[27%]   bg-[#0008D3] grid place-content-center rounded-md transition-all ${englebert.className} pointer-events-none`}
+      className={`bottom-[5%] absolute text-2xl text-center text-white left-[37%] p-4 w-[27%]   bg-[#0008D3] grid place-content-center rounded-md transition-all pointer-events-none`}
     >
       <Nail2 />
       <MotionPerspective3d

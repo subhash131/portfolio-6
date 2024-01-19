@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { englebert } from "../../../fonts";
 import { Nail2 } from "../../common/nails/Nail";
 import MotionPerspective3d from "../../common/perserve_3d/MotionPerspective3d";
 
@@ -22,7 +21,7 @@ const ImmersiveExperience = () => {
         visibility: "visible",
       }}
       transition={{ duration: 0.3, delay: 1.4 }}
-      className={`top-[12%] absolute text-xl text-center text-black left-[37%] p-4 w-[27%] h-[35%] bg-[#C4BDA5] grid place-content-center rounded-md transition-all pointer-events-none ${englebert.className}`}
+      className={`top-[12%] absolute text-xl text-center text-black left-[37%] p-4 w-[27%] h-[35%] bg-[#C4BDA5] grid place-content-center rounded-md transition-all pointer-events-none`}
     >
       <Nail2 />
       <MotionPerspective3d

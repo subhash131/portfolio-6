@@ -5,6 +5,7 @@ import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import styles from "./background.module.css";
 import Perspective3d from "../../common/perserve_3d/Perspective3d";
 import { useStateContext } from "@/context/StateContext";
+import { ephesis } from "@/fonts";
 
 const Background = ({
   children,
@@ -56,7 +57,7 @@ const Background = ({
         rotateX,
         transformStyle: "preserve-3d",
       }}
-      className={styles.container}
+      className={`${styles.container}`}
       initial={{ height: 0, width: 0, overflow: "hidden" }}
       animate={{ height: 650, width: 1250, overflow: "visible" }}
       transition={{ duration: 0.5 }}
@@ -69,8 +70,9 @@ const Background = ({
         className={`absolute inset-4 rounded-md shadow-lg ${className} p-2  ${styles.bg}`}
       >
         {children}
-        <Perspective3d className="top-28 left-20 absolute text-white text-4xl select-none">
-          Code by Subhash nayak
+        <Perspective3d className="top-28 left-20 absolute text-white text-xl select-none">
+          Code by:{" "}
+          <span className={`${ephesis.className} text-4xl`}>Subhash nayak</span>
         </Perspective3d>
       </div>
     </motion.div>

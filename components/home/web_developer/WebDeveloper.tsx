@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Perspective3d from "../../common/perserve_3d/Perspective3d";
-import { englebert } from "../../../fonts";
 import MotionPerspective3d from "../../common/perserve_3d/MotionPerspective3d";
 
 const WebDeveloper = () => {
@@ -15,7 +14,7 @@ const WebDeveloper = () => {
         bottom: 30,
       }}
       transition={{ duration: 0.4, delay: 0.2 }}
-      className={`absolute text-3xl text-center text-white left-[4%] h-[55%] w-[30%]  bg-[#708765] grid place-content-center rounded-md ${englebert.className} transition-all`}
+      className={`absolute text-3xl text-center text-white left-[4%] h-[55%] w-[30%]  bg-[#708765] grid place-content-center rounded-md transition-all`}
     >
       <MotionPerspective3d
         initial={{

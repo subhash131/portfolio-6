@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import MotionPerspective3d from "../common/perserve_3d/MotionPerspective3d";
-import { englebert } from "@/fonts";
 import Perspective3d from "../common/perserve_3d/Perspective3d";
 
 const Send = () => {
@@ -19,7 +18,7 @@ const Send = () => {
       }}
       translatez={0}
       transition={{ duration: 0.3, delay: 1 }}
-      className={` absolute text-2xl text-center bg-[#fff] text-gray-700 left-[73%] p-4 w-[20%] rounded-md transition-all flex bottom-[10%] gap-10 flex-col ${englebert.className} justify-center cursor-pointer`}
+      className={` absolute text-2xl text-center bg-[#fff] text-gray-700 left-[73%] p-4 w-[20%] rounded-md transition-all flex bottom-[10%] gap-10 flex-col justify-center cursor-pointer hover:bg-[#a9a9a9] hover:text-white`}
       onClick={() => {
         console.log("send");
       }}

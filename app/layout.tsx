@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ephesis } from "@/fonts";
+import { englebert } from "@/fonts";
 import StateContextProvider from "@/context/StateContext";
 import Background from "@/components/layout/background/Background";
 import Titlebar from "@/components/layout/titlebar/Titlebar";
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <StateContextProvider>
-        <body className={`${ephesis.className}`}>
+        <body className={`${englebert.className}`}>
           <Perspective3d className="h-screen w-screen overflow-hidden bg-black grid place-content-center select-none">
             <Background>
               <Titlebar />
