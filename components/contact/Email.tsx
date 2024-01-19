@@ -11,7 +11,7 @@ const Email = () => {
       }}
       animate={{
         opacity: 1,
-        skewY: -2,
+        skewY: -1,
       }}
       translatez={60}
       transition={{ duration: 0.3, delay: 0.5, ease: "linear" }}
